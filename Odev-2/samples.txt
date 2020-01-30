@@ -1,0 +1,11 @@
+directory/A.txt
+directory/B.txt
+directory/C.txt
+directory/D.txt
+directory/E.txt
+directory/F.txt
+directory/G.txt
+directory/H.txt
+directory/I.txt
+directory/J.txt
+directory/ornek.txt
