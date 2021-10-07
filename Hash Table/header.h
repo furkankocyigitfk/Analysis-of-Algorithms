@@ -9,7 +9,8 @@
 #define ERROR -1
 #define NOTFOUND -1
 
-struct node{
+struct node
+{
 	char *data;
 	struct node *next;
 };

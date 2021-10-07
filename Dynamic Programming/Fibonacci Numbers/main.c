@@ -1,6 +1,7 @@
 #include "header.h"
 
-int main(){
+int main()
+{
 	/*
 	****Recursive Solution****
 	fib(n):
@@ -19,33 +20,33 @@ int main(){
 	save fib(n-1) and fib(n-2). Don't try to find it again.
 	*/
 	int result;
-	int arr[N+1];
+	int arr[N + 1];
 	int i;
 	double time;
 	clock_t t;
-	
+
 	t = clock();
-	
+
 	result = recFib(N);
-	
+
 	t = clock() - t;
 	time = ((double)t) / CLOCKS_PER_SEC;
-	
+
 	printf("result %d took %f seconds\n", result, time);
-	
-		
+
 	t = clock();
-	
+
 	arr[0] = 0;
 	arr[1] = 1;
-	for(i=2; i<N+1; i++){
+	for (i = 2; i < N + 1; i++)
+	{
 		arr[i] = -1;
 	}
 	result = dynFib(N, arr);
-	
+
 	t = clock() - t;
 	time = ((double)t) / CLOCKS_PER_SEC;
 	printf("result %d took %f seconds", result, time);
-	
+
 	return 0;
 }
